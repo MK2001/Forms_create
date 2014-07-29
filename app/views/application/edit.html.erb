@@ -1,0 +1,8 @@
+<h2> Edit Profile </h2>
+
+<form action= "/update_profile/<%= @p.id %>">
+  <input type = 'text' name = 'name' placeholder = 'name' value="<%= @p.name %>">
+  <input type = 'text' name = 'picture' placeholder = 'picture' value="<%= @p.picture %>">
+  <input type = 'text' name = 'text' placeholder = 'text' value="<%= @p.text %>">
+  <input type = "submit">
+</form>
