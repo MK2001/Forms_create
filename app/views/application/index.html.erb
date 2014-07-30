@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset2">
+        <h1>Users:</h1>
+        <ul>
+          <% @profiles.each do |user| %>
+          <li>
+            <%= user.name %>
+            <a href="/profiles/<%= user.id %>">show</a> 
+            <a href="/profiles/<%= user.id %>/edit">edit</a> 
+            <a href="/profiles/<%= user.id %>/destroy">destroy</a> 
+          </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+   

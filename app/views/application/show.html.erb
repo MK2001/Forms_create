@@ -3,7 +3,7 @@
 <div class="media">
   <a class="pull-left" href="#">
     <div class="thumbnail">
-      <img class="media-object" src="<%= @p.picture %=>" alt="">
+      <img class="media-object" src="<%= @p.picture %>" alt="">
     </div>
   </a>
 <div class="media-body">  
@@ -19,9 +19,11 @@
   <span class="sr-only">45% Complete</span>
 </div>
   <div class="links">
-  <a href="/show/<%= @p.id %>/edit">edit</a>
+  <a href="/profiles/<%= @p.id %>/edit">edit</a>
+  <br>
+  <a href="/profiles/<%= @p.id %>/destroy">delete</a>
  </div>
-  </div>
+</div>
  
 
   

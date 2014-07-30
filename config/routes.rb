@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  get '/show/' => 'application#show'
+  get '/profiles/:id' => 'application#show'
+  get '/new_profile' => 'application#new'
   get '/create_profile' => 'application#create'
-  get 'profile/:id/edit' => 'application#edit'
+  get '/profiles/:id/edit' => 'application#edit'
   get '/update_profile/:id' => 'application#update'
-end
+  get '/profiles/:id/destroy' => 'application#destroy'
+  get '/profiles' => 'application#index'
+end 
+
